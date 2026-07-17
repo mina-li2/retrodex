@@ -3,6 +3,7 @@
 A fan-made, retro GBA-styled Pokédex covering Kanto, Johto, and Hoenn (Gen 1–3) — browse the regional dex, check stats and abilities, and chat with Professor Oak, who looks up real Pokémon data live rather than reciting canned answers.
 
 **🔗 Live site:** [retrodex-minali-v.vercel.app](https://retrodex-minali-v.vercel.app/)
+(Render's free tier sleeps after inactivity — first request after idle takes ~30-50s.)
 
 ## Features
 
