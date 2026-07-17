@@ -1,0 +1,44 @@
+# ---- Python / FastAPI backend ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Env files (NEVER commit secrets/API keys)
+.env
+.env.local
+.env.*.local
+
+# Local DB files (if using SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# ---- Node / frontend ----
+node_modules/
+dist/
+build/
+.next/
+out/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Misc ----
+*.pyc
+.cache/
+coverage/
