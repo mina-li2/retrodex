@@ -34,23 +34,6 @@ Visit `http://localhost:3000`. You should see the boot screen, then the full gri
 seeded Pokémon with real sprites, working search/filter, and detail view with real
 stats pulled from your Neon database.
 
-### 4. Deploy
-- Push this folder to its own GitHub repo (or a subfolder of a monorepo).
-- On [vercel.com](https://vercel.com): New Project → import the repo → it auto-detects
-  Next.js, no config needed.
-- In Vercel's project settings → Environment Variables, set:
-  ```
-  NEXT_PUBLIC_API_URL=https://your-backend.onrender.com
-  ```
-  (your actual deployed Render backend URL)
-- Also update the backend's `CORS_ORIGINS` env var on Render to include your new
-  Vercel URL, or the frontend won't be able to call it.
-
-## Notes on what's still "dummy"
-- The **AI chat panel** (Prof. Oak) is still static/hardcoded messages — this becomes
-  real once we build the RAG + tool-calling agent endpoint, per the PRD.
-- Detail view fetches full stats/description on demand when you open an entry (not
-  prefetched for all 386 at once) — keeps the initial list load fast.
 
 ## Troubleshooting
 - **Blank grid / "Couldn't reach the Dex API" message:** backend isn't running, or
