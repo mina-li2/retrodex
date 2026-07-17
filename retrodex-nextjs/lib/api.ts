@@ -16,8 +16,7 @@ export type Poke = {
   stats: { hp: number; atk: number; def: number; spa: number; spd: number; spe: number };
 };
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
-
+const API_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000").replace(/\/+$/, "");
 // Shapes returned by the FastAPI backend (see backend/app/schemas.py)
 type ApiListItem = {
   id: number;
